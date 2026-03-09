@@ -23,3 +23,5 @@ lib/
 coverage/
 lcov.info
 EOF
+
+node_modules/
