@@ -1,4 +1,25 @@
-cache/
+cat > .gitignore << 'EOF'
+# Foundry build artifacts
 out/
-.vscode
-.idea
+cache/
+
+# Dependencies (reinstallable via forge install)
+lib/
+
+# Environment variables
+.env
+.env.local
+
+# Mac system files
+.DS_Store
+
+# IDE files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Coverage reports
+coverage/
+lcov.info
+EOF
